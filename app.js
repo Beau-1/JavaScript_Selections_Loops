@@ -133,4 +133,34 @@ if (p > n) {
 }
 
 
+//Exercise 5
+
+//Start with the following code:
+
+
+let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+let s = Math.round(Math.random() * (1000 - 1) + 1);
+let start = Math.round(Math.random() * (10 - 1) + 1);
+
+//Re-implement exercise 2, but use `start` as the initial value for
+// `i`, `n` as the range limit in `i <= n`, and `fizzDivisor` and `buzzDivisor` as 
+//the dependent values for determining "FIZZ" and "BUZZ" print messages.
+
+
+
+
+for (let t = start; t <= end; t++) {
+    if (t % fizzDivisor === 0 && t % buzzDivisor === 0) {
+      console.log("FIZZBUZZ");
+    } else if (t % fizzDivisor === 0) {
+      console.log("FIZZ");
+    } else if (t % buzzDivisor === 0) {
+      console.log("BUZZ");
+    } else {
+      console.log(t);
+    }
+  }
+
+
 
